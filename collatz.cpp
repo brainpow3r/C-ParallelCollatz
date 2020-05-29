@@ -69,7 +69,7 @@ int main(int argc, char** args) {
 
 	start = atoll(args[1]);
 	end = atoll(args[2]);	
-
+        std::cout << "Total numbers: " << (end - start + 1) << "\n";
 	#ifdef OMP_ENABLED
 	  openmp(start, end);
 	#endif
